@@ -10,19 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GreenLiv">
         <activity
-            android:name="com.livgreen.greenliv.Qr_scanner"
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
-            android:name="com.livgreen.greenliv.About_University"
+            android:name=".Qr_scanner"
             android:exported="true" />
         <activity
-            android:name="com.livgreen.greenliv.About_Application"
+            android:name=".About_University"
             android:exported="true" />
         <activity
-            android:name="com.livgreen.greenliv.About_Sequestration"
+            android:name=".About_Application"
             android:exported="true" />
         <activity
-            android:name="com.livgreen.greenliv.MainActivity"
+            android:name=".About_Sequestration"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
