@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Sequestration"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="25dp"
+        android:text=" “The application will help you in understanding your status of surrounding Floral Diversity and its contribution in Carbon
+Sequestration in your area.
+ The Application is developed under the ICSSR IMPRESS Project titled as “Transformative Urban Regions: Governing
+Accessibility, Liveability and Sustainability in the Megacity Regions” and University of Mumbai Biodiversity Audit Committee.
+ The result displayed as inbuilt data are collected and surveyed by Mumbai University Community.
+ The result displayed as an output provided by user inputs totally depend on User’s understanding and information.
+ The visualisation is for the better understanding of spatial distribution of green space and importance of it, around you or the
+surveyed location by Users.
+ The Visualisation of data can only be used for research and / or awareness and not for any legal claims*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

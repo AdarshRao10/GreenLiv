@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Sequestration"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="25dp"
+        android:text="The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier Universities in India.
+It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the first three Universities
+in India. As a sequel to the change in the name of the city from Bombay to Mumbai, the name of the University has been
+changed from “University of Bombay” to “University of Mumbai”, vide notification issued by the Government of Maharashtra
+and published in the Government Gazette dated 4th September, 1996.The University was accorded 5 star status in 2001 and ‘A’
+grade status in April 2012 by the National Assessment and Accreditation Council (NAAC)."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Sequestration"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="25dp"
+        android:text="Carbon dioxide is the most commonly produced greenhouse gas. Carbon sequestration is the process of capturing and storing atmospheric
+carbon dioxide. It is one method of reducing the amount of carbon dioxide in the atmosphere with the goal of reducing global climate
+change. The USGS is conducting assessments on two major types of carbon sequestration: geologic and biologic. --- By USGS
+(https://www.usgs.gov/faqs/what-carbon-sequestration?qt-news_science_products=0#qt-news_science_products)
+How to calculate CO2 sequestration ?
+By Bas Fransen (2019)
+A key “feature” of a tree is that trees sequester carbon – the process of removal and long-term storage of carbon dioxide
+(CO2) from our atmosphere.
+EcoMatcher and its tree-planting partners estimate that the trees planted sequester CO2 at an average of 25 kilos per tree
+per year; we use an average of 250 kilos over a tree’s lifetime. Please note those are average numbers as multiple different
+species are being planted.
+The rate of carbon sequestration depends on the growth characteristics of the tree species, the density of its wood, the
+location’s conditions for growth, and the plant stage of the tree."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
