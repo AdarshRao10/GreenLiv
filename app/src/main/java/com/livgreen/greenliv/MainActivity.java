@@ -39,55 +39,57 @@ public class MainActivity extends AppCompatActivity {
         btn_Submit_Data = findViewById(R.id.btn_Submit_Data);
 
 
-        cal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (validateform()) {
-
-
-                    calculateCarbonSequestraton();
-
-                    Intent SendAnotherResponse = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(SendAnotherResponse);
-
-
-//                    String Lat = treeLat.getText().toString();
-//                    String Long = treeLong.getText().toString();
-//                    String Name = treeName.getText().toString();
-//                    Trunk =  Double.valueOf(treeTrunk.getText().toString());  //D
-//                    Height = Double.valueOf(treeHeight.getText().toString()); //H
+//        cal.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (validateform()) {
 //
-//                    if(Trunk < 11)
-//                    {
-//                      wa = 0.25*(Math.pow(Trunk,2))*Height;
-//                    }
-//                    else if(Trunk > 11)
-//                    {
-//                        wa = 0.15*(Math.pow(Trunk,2))*Height;
-//                    }
 //
-//                    wt = 1.2*wa ;
-//                    wd = 0.725*wt;
-//                    wc = 0.50*wd;
-//                    wco2 = 3.67*wc ;
-//                    Sequestration = 0.453592*wco2;
+//                    calculateCarbonSequestraton();
 //
-//                    Toast.makeText(getApplicationContext(), " "+Sequestration, Toast.LENGTH_SHORT).show();
-
-
-
-                    
-                }
-            }
-        });
+//                    Intent SendAnotherResponse = new Intent(getApplicationContext(), MainActivity.class);
+//                    startActivity(SendAnotherResponse);
+//
+//
+////                    String Lat = treeLat.getText().toString();
+////                    String Long = treeLong.getText().toString();
+////                    String Name = treeName.getText().toString();
+////                    Trunk =  Double.valueOf(treeTrunk.getText().toString());  //D
+////                    Height = Double.valueOf(treeHeight.getText().toString()); //H
+////
+////                    if(Trunk < 11)
+////                    {
+////                      wa = 0.25*(Math.pow(Trunk,2))*Height;
+////                    }
+////                    else if(Trunk > 11)
+////                    {
+////                        wa = 0.15*(Math.pow(Trunk,2))*Height;
+////                    }
+////
+////                    wt = 1.2*wa ;
+////                    wd = 0.725*wt;
+////                    wc = 0.50*wd;
+////                    wco2 = 3.67*wc ;
+////                    Sequestration = 0.453592*wco2;
+////
+////                    Toast.makeText(getApplicationContext(), " "+Sequestration, Toast.LENGTH_SHORT).show();
+//
+//
+//
+//
+//                }
+//            }
+//        });
 
         btn_Submit_Data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 calculateCarbonSequestraton();
-                Intent report = new Intent(getApplicationContext(), About_Application.class);
-                startActivity(report);
+                Intent submit = new Intent(getApplicationContext(), AddAnotherResponse.class);
+                startActivity(submit);
+
+                finish();
 
             }
         });

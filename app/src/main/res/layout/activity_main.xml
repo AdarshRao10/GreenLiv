@@ -107,13 +107,6 @@
 
 
 
-    <Button
-        android:id="@+id/cal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send Another Response"
-        android:layout_marginTop="10dp"/>
-
 
     <Button
         android:id="@+id/btn_Submit_Data"
