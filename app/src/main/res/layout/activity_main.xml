@@ -111,50 +111,18 @@
         android:id="@+id/cal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="Send Another Response"
         android:layout_marginTop="10dp"/>
 
-    <LinearLayout
+
+    <Button
+        android:id="@+id/btn_Submit_Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <Button
-            android:id="@+id/carbon"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="About Carbon Sequestration"
-            android:layout_marginTop="10dp"/>
+        android:text="Submit"
+        android:layout_marginTop="10dp"/>
 
 
-        <Button
-            android:id="@+id/application"
-            android:layout_marginLeft="10dp"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="About Application"
-            android:layout_marginTop="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <Button
-            android:id="@+id/university"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="About Mumbai University"
-            android:layout_marginTop="10dp"/>
-
-
-
-
-    </LinearLayout>
 
 
 
