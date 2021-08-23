@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
                 SharedPreferences preferences=getSharedPreferences("userID",MODE_PRIVATE);
                 if(preferences.contains("userID"))
                 {
-//                    startActivity(new Intent(SplashActivity.this, FormSectionOne.class));
+                    startActivity(new Intent(SplashActivity.this, HomeActivity.class));
                 }else
                 {
                     startActivity(new Intent(SplashActivity.this,LoginActivity.class));

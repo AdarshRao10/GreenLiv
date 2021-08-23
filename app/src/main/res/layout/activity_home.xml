@@ -26,7 +26,7 @@
                     android:id="@+id/fortCampus"
                     android:src="@drawable/fort_campus_mu"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="250dp"/>
 
                 <TextView
                     android:gravity="center"
@@ -47,7 +47,7 @@
                     android:id="@+id/kalinaCampus"
                     android:src="@drawable/kalina_campss"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="250dp"/>
 
                 <TextView
                     android:text="KALINA CAMPUS"
@@ -70,7 +70,7 @@
                     android:id="@+id/ratnaSub"
                     android:src="@drawable/ratnagiri_sub_campus"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="250dp"/>
 
                 <TextView
                     android:text="RATNAGIRI SUB-CAMPUS"
@@ -91,7 +91,7 @@
                     android:id="@+id/thaneSub"
                     android:src="@drawable/thane_sub_campus"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="250dp"/>
 
                 <TextView
                     android:text="THANE SUB-CAMPUS"
@@ -113,7 +113,7 @@
                     android:id="@+id/kalynSub"
                     android:src="@drawable/kalyan_sub_center"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="250dp"/>
 
                 <TextView
                     android:text="KALYAN SUB-CAMPUS"

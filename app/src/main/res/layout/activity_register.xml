@@ -115,6 +115,26 @@
                 android:hint="Enter Highest Qualification" />
 
             <EditText
+                android:id="@+id/txtUniName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter University Name" />
+
+            <EditText
+                android:id="@+id/txtInsti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter name of institution/Department" />
+
+            <EditText
                 android:id="@+id/txtprof"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,32 +144,17 @@
                 android:ems="10"
                 android:hint="Enter Profession" />
 
-            <!--    <EditText-->
-            <!--        android:id="@+id/txtPwd"-->
-            <!--        android:layout_width="match_parent"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:layout_marginLeft="10dp"-->
-            <!--        android:layout_marginRight="10dp"-->
-            <!--        android:layout_marginTop="5dp"-->
-            <!--        android:ems="10"-->
-            <!--        pass-->
-            <!--        android:hint="Create password eg: yyyy/mm/dd" />-->
+            <EditText
+                android:id="@+id/txtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Enter your area Pin Code" />
 
-            <!--    <com.google.android.material.textfield.TextInputLayout-->
-            <!--        android:id="@+id/txtPwd"-->
-            <!--        android:layout_width="match_parent"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:layout_marginLeft="10dp"-->
-            <!--        android:layout_marginRight="10dp"-->
-            <!--        android:hint="Create password eg: yyyy/mm/dd"-->
-            <!--        app:passwordToggleEnabled="true">-->
-
-            <!--        <com.google.android.material.textfield.TextInputEditText-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--           />-->
-
-            <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
 
             <TextView

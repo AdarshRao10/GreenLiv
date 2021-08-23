@@ -2,16 +2,14 @@ package com.livgreen.greenliv;
 
 public class UserHelperClass {
 
-    String fname,lname,email,age,gender,qualification,profession,purpose,password,userid;
+    String fname,lname,email,age,gender,qualification,profession,purpose,password,userid,university,institute,pincode;
 
     public UserHelperClass() {
 
     }
 
 
-
-    public UserHelperClass(String userid, String fname, String lname, String email, String age, String gender, String qualification, String profession, String purpose, String password) {
-        this.userid = userid;
+    public UserHelperClass(String fname, String lname, String email, String age, String gender, String qualification, String profession, String purpose, String password, String userid, String university, String institute, String pincode) {
         this.fname = fname;
         this.lname = lname;
         this.email = email;
@@ -21,6 +19,34 @@ public class UserHelperClass {
         this.profession = profession;
         this.purpose = purpose;
         this.password = password;
+        this.userid = userid;
+        this.university = university;
+        this.institute = institute;
+        this.pincode = pincode;
+    }
+
+    public String getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(String university) {
+        this.university = university;
+    }
+
+    public String getInstitute() {
+        return institute;
+    }
+
+    public void setInstitute(String institute) {
+        this.institute = institute;
+    }
+
+    public String getPincode() {
+        return pincode;
+    }
+
+    public void setPincode(String pincode) {
+        this.pincode = pincode;
     }
 
     public String getUserid() {

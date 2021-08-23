@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.livgreen.greenliv">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GreenLiv">
         <activity
+            android:name=".OptionsActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
             android:exported="true" />
         <activity
             android:name=".Qr_scanner"
@@ -29,12 +41,16 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity android:name=".SplashActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

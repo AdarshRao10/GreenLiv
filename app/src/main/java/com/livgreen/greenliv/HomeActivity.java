@@ -2,6 +2,7 @@ package com.livgreen.greenliv;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,35 +26,35 @@ public class HomeActivity extends AppCompatActivity {
         fortCampus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "fort", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Data in Processes", Toast.LENGTH_SHORT).show();
             }
         });
 
         kalinaCampus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "kalina", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),OptionsActivity.class));
             }
         });
 
         ratnaSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "ratnagiri", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Data in Processes", Toast.LENGTH_SHORT).show();
             }
         });
 
         thaneSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "thane", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Data in Processes", Toast.LENGTH_SHORT).show();
             }
         });
 
         kalyanSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "kalyan", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Data in Processes", Toast.LENGTH_SHORT).show();
             }
         });
 

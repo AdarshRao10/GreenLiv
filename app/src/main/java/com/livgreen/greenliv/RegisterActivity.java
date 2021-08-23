@@ -2,8 +2,17 @@ package com.livgreen.greenliv;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -20,9 +29,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements LocationListener {
 
-    EditText txtfname, txtlname, txtEmail, txtAge, txtGender, txtQualify, txtprof, txtPurpose, et_day, et_month, et_year, txtUserId;
+    EditText txtfname, txtlname, txtEmail, txtAge, txtGender, txtQualify, txtprof, txtPurpose, et_day, et_month, et_year, txtUserId, txtUniName, txtInsti,txtPincode;
 //    TextInputLayout txtPwd;
     Button btnReg, btnLogin;
     String[] GenderType;
@@ -30,6 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     FirebaseDatabase RootNode;
     DatabaseReference reference;
+
+    LocationManager locationManager;
 
 
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -54,6 +65,9 @@ public class RegisterActivity extends AppCompatActivity {
         et_year = findViewById(R.id.et_year);
         btnLogin = findViewById(R.id.btnLogin);
         txtUserId = findViewById(R.id.txtUserId);
+        txtUniName=findViewById(R.id.txtUniName);
+        txtInsti=findViewById(R.id.txtInsti);
+        txtPincode=findViewById(R.id.txtPincode);
 
         // Spinner element
         spinner = findViewById(R.id.spinner);
@@ -82,15 +96,22 @@ public class RegisterActivity extends AppCompatActivity {
                     RootNode = FirebaseDatabase.getInstance();//gets all the elements in db from that select 1 element from tree struc
                     reference = RootNode.getReference("users");
 
+                    SharedPreferences preferences=getSharedPreferences("userID", MODE_PRIVATE);
+                    SharedPreferences.Editor editor=preferences.edit();
+
+                    editor.putString("userID",userid);
+                    editor.commit();
+
+
 
                     Query checkuser = reference.orderByChild("userid").equalTo(userid);
                     checkuser.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()) {
+                            if(snapshot.exists())
+                            {
                                 txtUserId.setError("choose unique userid");
-                            } else {
-
+                            }else{
                                 //get all values from edit Text
                                 String fname = txtfname.getText().toString();
                                 String lname = txtlname.getText().toString();
@@ -104,25 +125,35 @@ public class RegisterActivity extends AppCompatActivity {
                                 String month = et_month.getText().toString();
                                 String year = et_year.getText().toString();
                                 String password = year + month + day;
+                                String university=txtUniName.getText().toString();
+                                String institute=txtInsti.getText().toString();
+                                String pincode=txtPincode.getText().toString();
 //                    String userid = txtUserId.getText().toString();
                                 //String password = txtPwd.getEditText().getText().toString() ;
 
 
-                                UserHelperClass helperClass = new UserHelperClass(userid, fname, lname, email, age, gender, qualification, profession, purpose, password);
+
+
+                                UserHelperClass helperClass = new UserHelperClass(fname,lname,email,age,gender,qualification,profession,purpose,password,userid,university,institute,pincode);
 
                                 reference.child(userid).setValue(helperClass);
+
+                                if(ContextCompat.checkSelfPermission(RegisterActivity.this,Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED &&
+                                        ContextCompat.checkSelfPermission(RegisterActivity.this,Manifest.permission.ACCESS_COARSE_LOCATION)!=PackageManager.PERMISSION_GRANTED){
+                                    ActivityCompat.requestPermissions(RegisterActivity.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},0);
+                                }else {
+                                    getLocation();
+                                }
                                 // reference.child(fname).setValue(helperClass);
                                 // reference.push().setValue(helperClass);
 
-//                                Toast.makeText(getApplicationContext(),"Login successfull!!",Toast.LENGTH_SHORT).show();
-//                                startActivity(new Intent(getApplicationContext(),Terms.class));
-                                finish();
+
 
 
                             }
 
-
                         }
+
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) {
@@ -145,6 +176,20 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
 
+    }
+
+
+
+    @SuppressLint("MissingPermission")
+    private void getLocation()
+    {
+        try {
+            locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,5000,5000,RegisterActivity.this);
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private boolean validateform() {
@@ -227,4 +272,29 @@ public class RegisterActivity extends AppCompatActivity {
         return true;
     }
 
+
+    @Override
+    public void onLocationChanged(@NonNull Location location) {
+        Toast.makeText(this, ""+location.getLatitude()+","+location.getLongitude(), Toast.LENGTH_SHORT).show();
+
+        double lat = location.getLatitude();
+        double lng= location.getLongitude();
+//                            latitude.setText(String.format("%s", lat));
+//                            longitude.setText(String.format("%s",longitude1));
+
+        //Toast.makeText(getApplicationContext()," "+lat+" "+longitude1, Toast.LENGTH_SHORT).show();
+
+        SharedPreferences preferences=getSharedPreferences("userID", MODE_PRIVATE);
+        String userID = preferences.getString("userID", "");
+        RootNode = FirebaseDatabase.getInstance();//gets all the elements in db from that select 1 element from tree struc
+        reference = RootNode.getReference("users");
+
+        reference.child(userID).child("latitude").setValue(lat);  //17.319401181464258, 78.40302230454013
+        reference.child(userID).child("longitude").setValue(lng);
+
+        Toast.makeText(getApplicationContext(),"Registration successfull!!",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+        finish();
+
+    }
 }
