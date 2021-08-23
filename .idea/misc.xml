@@ -3,23 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_add_another_response.xml" value="0.16770833333333332" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_carbon_sequestration_report.xml" value="0.1" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_qr_scanner.xml" value="0.16770833333333332" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_register.xml" value="0.25052083333333336" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/activity_splash.xml" value="0.25" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/item_drop_down.xml" value="0.2625" />
-        <entry key="..\:/GreenLiv/app/src/main/res/layout/row_item_sequestration_report.xml" value="0.25" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_application.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_sequestration.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_university.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_qr_codes.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_qr_scanner.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_scanner_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/row_data.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

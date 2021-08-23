@@ -45,7 +45,8 @@ public class OptionsActivity extends AppCompatActivity {
         mapUni.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Maps for Adars", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "Maps for Adars", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),MapsActivity.class));
             }
         });
 
@@ -59,7 +60,9 @@ public class OptionsActivity extends AppCompatActivity {
         qrCodes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "QR code list for Adarsh", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "QR code list for Adarsh", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),Qr_codes.class));
+
             }
         });
 
