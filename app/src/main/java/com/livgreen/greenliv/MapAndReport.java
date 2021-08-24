@@ -32,7 +32,7 @@ public class MapAndReport extends AppCompatActivity {
         sequesReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "sequestration report list by Adarsh", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(getApplicationContext(),BiodiversityActivity.class));
             }
         });
     }

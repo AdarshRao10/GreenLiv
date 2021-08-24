@@ -19,7 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GreenLiv">
         <activity
-            android:name=".SequestrationReport"
+            android:name=".CalculationReport"
+            android:exported="true" />
+        <activity
+            android:name=".BiodiversityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MapAndReport"
             android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -42,6 +48,9 @@
             android:exported="true" />
         <activity
             android:name=".AddAnotherResponse"
+            android:exported="true" />
+        <activity
+            android:name=".LogoActivity"
             android:exported="true" />
         <activity
             android:name=".OptionsActivity"

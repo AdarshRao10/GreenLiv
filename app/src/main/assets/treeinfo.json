@@ -1,0 +1,826 @@
+{
+    "Table": [
+        {
+            "Sr.no.": "1",
+            "Common name": "African tulip tree",
+            "Botanical name": "Spathodea campanulata  P.Beauv.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "2",
+            "Common name": "Agasthi",
+            "Botanical name": "Sesbania grandiflora  (L.) Pers.",
+            "Family": "Fabaceae"
+        },
+        {
+            "Sr.no.": "3",
+            "Common name": "Akashneem",
+            "Botanical name": "Millingtonia hortensis  L.f.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "4",
+            "Common name": "Ambada",
+            "Botanical name": "Spondias pinnata  (L. f.) Kurz",
+            "Family": "Anacardiaceae"
+        },
+        {
+            "Sr.no.": "5",
+            "Common name": "Amla",
+            "Botanical name": "Phyllanthus emblica  L.",
+            "Family": "Phyllanthaceae"
+        },
+        {
+            "Sr.no.": "6",
+            "Common name": "Anant",
+            "Botanical name": "Gardenia jasminoides  J.Ellis",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "7",
+            "Common name": "Apta",
+            "Botanical name": "Bauhinia racemosa  Lam.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "8",
+            "Common name": "Arjun",
+            "Botanical name": "Terminalia arjuna  (Roxb. ex DC.) Wight & Arn.",
+            "Family": "Combretaceae"
+        },
+        {
+            "Sr.no.": "9",
+            "Common name": "Asana",
+            "Botanical name": "Bridelia retusa  (L.) A.Juss.",
+            "Family": "Phyllanthaceae"
+        },
+        {
+            "Sr.no.": "10",
+            "Common name": "Asupalav",
+            "Botanical name": "Polyalthia longifolia  (Sonn.) Thwaites",
+            "Family": "Annonaceae"
+        },
+        {
+            "Sr.no.": "11",
+            "Common name": "Australian acacia",
+            "Botanical name": "Acacia auriculiformis  Benth.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "12",
+            "Common name": "Babool",
+            "Botanical name": "Acacia nilotica  (L.) Delile",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "13",
+            "Common name": "Badam",
+            "Botanical name": "Terminalia catappa  L.",
+            "Family": "Combretaceae"
+        },
+        {
+            "Sr.no.": "14",
+            "Common name": "Bahava",
+            "Botanical name": "Cassia fistula  L.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "15",
+            "Common name": "Baheda",
+            "Botanical name": "Terminalia bellirica  (Gaertn.) Roxb.",
+            "Family": "Combretaceae"
+        },
+        {
+            "Sr.no.": "16",
+            "Common name": "Bakneem",
+            "Botanical name": "Melia azedarach  L.",
+            "Family": "Meliaceae"
+        },
+        {
+            "Sr.no.": "17",
+            "Common name": "Bakul",
+            "Botanical name": "Mimusops elengi  L.",
+            "Family": "Sapotaceae"
+        },
+        {
+            "Sr.no.": "18",
+            "Common name": "Baobab tree",
+            "Botanical name": "Adansonia digitata  L.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "19",
+            "Common name": "Bel",
+            "Botanical name": "Aegle marmelos  (L.) Corrêa",
+            "Family": "Rutaceae"
+        },
+        {
+            "Sr.no.": "20",
+            "Common name": "Benjamin tree",
+            "Botanical name": "Ficus benjamina  L.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "21",
+            "Common name": "Bhend",
+            "Botanical name": "Thespesia populnea  (L.) Sol. ex Corrêa",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "22",
+            "Common name": "Bhokar",
+            "Botanical name": "Cordia dichotoma  G.Forst.",
+            "Family": "Boraginaceae"
+        },
+        {
+            "Sr.no.": "23",
+            "Common name": "Bitti",
+            "Botanical name": "Cascabela thevetia  (L.) Lippold",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "24",
+            "Common name": "Bivla",
+            "Botanical name": "Pterocarpus marsupium  Roxb.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "25",
+            "Common name": "Bor",
+            "Botanical name": "Ziziphus jujuba  Mill.",
+            "Family": "Rhamnaceae"
+        },
+        {
+            "Sr.no.": "26",
+            "Common name": "Bottle palm",
+            "Botanical name": "Roystonea regia  (Kunth) O.F.Cook",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "27",
+            "Common name": "Cannon ball tree",
+            "Botanical name": "Couroupita guianensis  Aubl.",
+            "Family": "Lecythidaceae"
+        },
+        {
+            "Sr.no.": "28",
+            "Common name": "Cassia glauca",
+            "Botanical name": "Senna sulfurea  (Collad.) H.S.Irwin & Barneby",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "29",
+            "Common name": "Cassia grandis",
+            "Botanical name": "Cassia grandis  L.f.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "30",
+            "Common name": "Cassia nodosa",
+            "Botanical name": "Cassia javanica  subsp. nodosa  (Roxb.) K.Larsen & S.S.Larsen",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "31",
+            "Common name": "Chandan",
+            "Botanical name": "Santalum album  L.",
+            "Family": "Santalaceae"
+        },
+        {
+            "Sr.no.": "32",
+            "Common name": "Charcoal tree",
+            "Botanical name": "Trema orientalis  (L.) Blume",
+            "Family": "Cannabaceae"
+        },
+        {
+            "Sr.no.": "33",
+            "Common name": "Charoli",
+            "Botanical name": "Buchanania cochinchinensis  (Lour.) M.R.Almeida",
+            "Family": "Anacardiaceae"
+        },
+        {
+            "Sr.no.": "34",
+            "Common name": "Chiku",
+            "Botanical name": "Manilkara zapota  (L.) P.Royen",
+            "Family": "Sapotaceae"
+        },
+        {
+            "Sr.no.": "35",
+            "Common name": "Chinch",
+            "Botanical name": "Tamarindus indica  L.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "36",
+            "Common name": "Chota taman",
+            "Botanical name": "Lagerstroemia thorelii Gagnep.",
+            "Family": "Lythraceae"
+        },
+        {
+            "Sr.no.": "37",
+            "Common name": "Christmas tree",
+            "Botanical name": "Araucaria columnaris  (G.Forst.) Hook.",
+            "Family": "Araucariaceae"
+        },
+        {
+            "Sr.no.": "38",
+            "Common name": "Coconut",
+            "Botanical name": "Cocos nucifera  L.",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "39",
+            "Common name": "Copper pod",
+            "Botanical name": "Peltophorum pterocarpum  (DC.) K.Heyne",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "40",
+            "Common name": "Dhatriphal",
+            "Botanical name": "Barringtonia acutangula  (L.) Gaertn.",
+            "Family": "Lecythidaceae"
+        },
+        {
+            "Sr.no.": "41",
+            "Common name": "Dikemali",
+            "Botanical name": "Gardenia resinifera  Roth",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "42",
+            "Common name": "Fan palm",
+            "Botanical name": "Livistona chinensis  (Jacq.) R.Br. ex Mart.",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "43",
+            "Common name": "Ficus tsiela",
+            "Botanical name": "Ficus amplissima  Sm.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "44",
+            "Common name": "Fishtail palm",
+            "Botanical name": "Caryota uren s L.",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "45",
+            "Common name": "Foxtail palm",
+            "Botanical name": "Wodyetia bifurcata  A.K.Irvine",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "46",
+            "Common name": "Giripuspa",
+            "Botanical name": "Gliricidia maculata  (\"Humb., Bonpl. & Kunth\") Steud",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "47",
+            "Common name": "Gulmohar",
+            "Botanical name": "Delonix regia  (Hook.) Raf.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "48",
+            "Common name": "Haldu",
+            "Botanical name": "Haldina cordifolia  (Roxb.) Ridsdale",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "49",
+            "Common name": "Harda",
+            "Botanical name": "Terminalia chebula  Retz.",
+            "Family": "Combretaceae"
+        },
+        {
+            "Sr.no.": "50",
+            "Common name": "Indian Rubber tree",
+            "Botanical name": "Ficus elastica  Roxb. ex Hornem.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "51",
+            "Common name": "Jackfruit",
+            "Botanical name": "Artocarpus heterophyllus  Lam.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "52",
+            "Common name": "Jamb",
+            "Botanical name": "Syzygium samarangense  (Blume) Merr. & L.M.Perry",
+            "Family": "Myrtaceae"
+        },
+        {
+            "Sr.no.": "53",
+            "Common name": "Jamun",
+            "Botanical name": "Syzygium cumini  (L.) Skeels",
+            "Family": "Myrtaceae"
+        },
+        {
+            "Sr.no.": "54",
+            "Common name": "Jungli badam",
+            "Botanical name": "Sterculia foetida  L.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "55",
+            "Common name": "Kadamb",
+            "Botanical name": "Neolamarckia cadamba  (Roxb.) Bosser",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "56",
+            "Common name": "Kadi patta",
+            "Botanical name": "Murraya koenigii  (L.) Spreng.",
+            "Family": "Rutaceae"
+        },
+        {
+            "Sr.no.": "57",
+            "Common name": "Kahandol",
+            "Botanical name": "Sterculia urens  Roxb",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "58",
+            "Common name": "Kajra",
+            "Botanical name": "Strychnos nux-vomica  L.",
+            "Family": "Loganiaceae"
+        },
+        {
+            "Sr.no.": "59",
+            "Common name": "Kaju",
+            "Botanical name": "Anacardium occidentale  L.",
+            "Family": "Anacardiaceae"
+        },
+        {
+            "Sr.no.": "60",
+            "Common name": "Kala kuda",
+            "Botanical name": "Holarrhena pubescens  Wall. ex G.Don",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "61",
+            "Common name": "Kala umber",
+            "Botanical name": "Ficus hispida  L.f.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "62",
+            "Common name": "Kalamb",
+            "Botanical name": "Mitragyna parvifolia  (Roxb.) Korth.",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "63",
+            "Common name": "Kanak champa",
+            "Botanical name": "Pterospermum acerifolium  (L.) Willd.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "64",
+            "Common name": "Kanchan",
+            "Botanical name": "Bauhinia purpurea  L.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "65",
+            "Common name": "Karambola",
+            "Botanical name": "Averrhoa carambola  L.",
+            "Family": "Oxalidaceae"
+        },
+        {
+            "Sr.no.": "66",
+            "Common name": "Karanj",
+            "Botanical name": "Pongamia pinnata  (L.) Pierre",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "67",
+            "Common name": "Kashid",
+            "Botanical name": "Senna siamea  (Lam.) H.S.Irwin & Barneby",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "68",
+            "Common name": "Katesavar",
+            "Botanical name": "Bombax ceiba  L.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "69",
+            "Common name": "Kavat",
+            "Botanical name": "Limonia acidissima  Groff",
+            "Family": "Rutaceae"
+        },
+        {
+            "Sr.no.": "70",
+            "Common name": "Khair",
+            "Botanical name": "Acacia catechu  (L.f.) Willd.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "71",
+            "Common name": "Kokam",
+            "Botanical name": "Garcinia indica  (Thouars) Choisy",
+            "Family": "Clusiaceae"
+        },
+        {
+            "Sr.no.": "72",
+            "Common name": "Kusum",
+            "Botanical name": "Schleichera oleosa  (Lour.) Merr.",
+            "Family": "Sapindaceae"
+        },
+        {
+            "Sr.no.": "73",
+            "Common name": "Laal Chapha",
+            "Botanical name": "Plumeria rubra  L.",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "74",
+            "Common name": "Laxmitaru",
+            "Botanical name": "Simarouba glauca  DC.",
+            "Family": "Simaroubaceae"
+        },
+        {
+            "Sr.no.": "75",
+            "Common name": "Lettuce tree",
+            "Botanical name": "Pisonia umbellifera  (J.R. Forst. & G. Forst.) Seem.",
+            "Family": "Nyctaginaceae"
+        },
+        {
+            "Sr.no.": "76",
+            "Common name": "Maha neem",
+            "Botanical name": "Melia dubia  Cav.",
+            "Family": "Meliaceae"
+        },
+        {
+            "Sr.no.": "77",
+            "Common name": "Mango",
+            "Botanical name": "Mangifera indica  L.",
+            "Family": "Anacardiaceae"
+        },
+        {
+            "Sr.no.": "78",
+            "Common name": "Mayur pankhi",
+            "Botanical name": "Platycladus orientalis  (L.) Franco",
+            "Family": "Cupressaceae"
+        },
+        {
+            "Sr.no.": "79",
+            "Common name": "Medsheng",
+            "Botanical name": "Dolichandrone falcata  (Wall. ex DC.) Seem.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "80",
+            "Common name": "Moha",
+            "Botanical name": "Madhuca longifolia  var. latifolia  (Roxb.) A.Chev.",
+            "Family": "Sapotaceae"
+        },
+        {
+            "Sr.no.": "81",
+            "Common name": "Muchkund",
+            "Botanical name": "Pterospermum suberifolium  (L.) Willd.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "82",
+            "Common name": "Mulberry",
+            "Botanical name": "Morus alba  L.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "83",
+            "Common name": "Nagkesar",
+            "Botanical name": "Mesua ferrea  L.",
+            "Family": "Calophyllaceae"
+        },
+        {
+            "Sr.no.": "84",
+            "Common name": "Narikel",
+            "Botanical name": "Pterygota alata  (Roxb.) R.Br.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "85",
+            "Common name": "Neem",
+            "Botanical name": "Azadirachta indica  A.Juss.",
+            "Family": "Meliaceae"
+        },
+        {
+            "Sr.no.": "86",
+            "Common name": "Niligiri",
+            "Botanical name": "Eucalyptus globulus  Labill.",
+            "Family": "Myrtaceae"
+        },
+        {
+            "Sr.no.": "87",
+            "Common name": "Noni",
+            "Botanical name": "Morinda citrifolia  L.",
+            "Family": "Rubiaceae"
+        },
+        {
+            "Sr.no.": "88",
+            "Common name": "Padal",
+            "Botanical name": "Stereospermum tetragonum  DC.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "89",
+            "Common name": "Palash",
+            "Botanical name": "Butea monosperma  (Lam.) Taub.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "90",
+            "Common name": "Paper mulberry",
+            "Botanical name": "Broussonetia papyrifera  (L.) L'Hér. ex Vent.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "91",
+            "Common name": "Parijatak",
+            "Botanical name": "Nyctanthes arbor-tristis  L.",
+            "Family": "Oleaceae"
+        },
+        {
+            "Sr.no.": "92",
+            "Common name": "Payar",
+            "Botanical name": "Ficus virens  Aiton",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "93",
+            "Common name": "Peepal",
+            "Botanical name": "Ficus religiosa  L.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "94",
+            "Common name": "Peru",
+            "Botanical name": "Psidium guajava  L.",
+            "Family": "Myrtaceae"
+        },
+        {
+            "Sr.no.": "95",
+            "Common name": "Phandara Chapha",
+            "Botanical name": "Plumeria rubra  L.",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "96",
+            "Common name": "Plumeria obtusa",
+            "Botanical name": "Plumeria obtusa  L.",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "97",
+            "Common name": "Putranjiva",
+            "Botanical name": "Putranjiva roxburghii  Wall.",
+            "Family": "Putranjivaceae"
+        },
+        {
+            "Sr.no.": "98",
+            "Common name": "Rai avla",
+            "Botanical name": "Phyllanthus acidus  (L.) Skeels",
+            "Family": "Phyllanthaceae"
+        },
+        {
+            "Sr.no.": "99",
+            "Common name": "Raintree",
+            "Botanical name": "Albizia saman  (Jacq.) Merr.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "100",
+            "Common name": "Ramphal",
+            "Botanical name": "Annona reticulata  L.",
+            "Family": "Annonaceae"
+        },
+        {
+            "Sr.no.": "101",
+            "Common name": "Ratangunj",
+            "Botanical name": "Adenanthera pavonina  L.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "102",
+            "Common name": "Ritha",
+            "Botanical name": "Sapindus trifoliatus  L.",
+            "Family": "Sapindaceae"
+        },
+        {
+            "Sr.no.": "103",
+            "Common name": "Rohan",
+            "Botanical name": "Aphanamixis polystachya  (Wall.) R.Parker",
+            "Family": "Meliaceae"
+        },
+        {
+            "Sr.no.": "104",
+            "Common name": "Rose of Venezuela",
+            "Botanical name": "Brownea grandiceps  Jacq.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "105",
+            "Common name": "Rosy trumpet tree",
+            "Botanical name": "Tabebuia rosea  (Bertol.) Bertero ex A.DC.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "106",
+            "Common name": "Sag",
+            "Botanical name": "Tectona grandis  L.f.",
+            "Family": "Lamiaceae"
+        },
+        {
+            "Sr.no.": "107",
+            "Common name": "Samudraphul",
+            "Botanical name": "Barringtonia racemosa  (L.) Spreng.",
+            "Family": "Lecythidaceae"
+        },
+        {
+            "Sr.no.": "108",
+            "Common name": "Sand paper tree",
+            "Botanical name": "Streblus asper  Lour.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "109",
+            "Common name": "Saptparni",
+            "Botanical name": "Alstonia scholaris  (L.) R. Br.",
+            "Family": "Apocynaceae"
+        },
+        {
+            "Sr.no.": "110",
+            "Common name": "Savar",
+            "Botanical name": "Ceiba pentandra  (L.) Gaertn.",
+            "Family": "Malvaceae"
+        },
+        {
+            "Sr.no.": "111",
+            "Common name": "Shami",
+            "Botanical name": "Prosopis cineraria  (L.) Druce",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "112",
+            "Common name": "Shemat",
+            "Botanical name": "Lannea coromandelica  (Houtt.) Merr.",
+            "Family": "Anacardiaceae"
+        },
+        {
+            "Sr.no.": "113",
+            "Common name": "Sher",
+            "Botanical name": "Euphorbia tirucalli  L.",
+            "Family": "Euphorbiaceae"
+        },
+        {
+            "Sr.no.": "114",
+            "Common name": "Shevga",
+            "Botanical name": "Moringa pterygosperma  Gaertn.",
+            "Family": "Moringaceae"
+        },
+        {
+            "Sr.no.": "115",
+            "Common name": "Shindi",
+            "Botanical name": "Phoenix sylvestris  (L.) Roxb.",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "116",
+            "Common name": "Shisam",
+            "Botanical name": "Dalbergia sissoo  DC.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "117",
+            "Common name": "Shivan",
+            "Botanical name": "Gmelina arborea  Roxb.",
+            "Family": "Lamiaceae"
+        },
+        {
+            "Sr.no.": "118",
+            "Common name": "Silver oak",
+            "Botanical name": "Grevillea robusta  A.Cunn. ex R.Br.",
+            "Family": "Proteaceae"
+        },
+        {
+            "Sr.no.": "119",
+            "Common name": "Singapore Cherry",
+            "Botanical name": "Muntingia calabura  L.",
+            "Family": "Muntingiaceae"
+        },
+        {
+            "Sr.no.": "120",
+            "Common name": "Sita Ashok",
+            "Botanical name": "Saraca asoca  (Roxb.) Willd.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "121",
+            "Common name": "Sitaphal",
+            "Botanical name": "Annona squamosa  L.",
+            "Family": "Annonaceae"
+        },
+        {
+            "Sr.no.": "122",
+            "Common name": "Son chapha",
+            "Botanical name": "Michelia champaca  L.",
+            "Family": "Magnoliaceae"
+        },
+        {
+            "Sr.no.": "123",
+            "Common name": "Subabul",
+            "Botanical name": "Leucaena leucocephala  (Lam.) de Wit",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "124",
+            "Common name": "Supari",
+            "Botanical name": "Areca catechu  L.",
+            "Family": "Arecaceae"
+        },
+        {
+            "Sr.no.": "125",
+            "Common name": "Suru",
+            "Botanical name": "Casuarina equisetifolia  L.",
+            "Family": "Casuarinaceae"
+        },
+        {
+            "Sr.no.": "126",
+            "Common name": "Tabebuia heterophylla",
+            "Botanical name": "Tabebuia heterophylla  (DC.) Britton",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "127",
+            "Common name": "Tamal patra",
+            "Botanical name": "Cinnamomum tamala  (Buch.-Ham.) T.Nees & Eberm.",
+            "Family": "Lauraceae"
+        },
+        {
+            "Sr.no.": "128",
+            "Common name": "Taman",
+            "Botanical name": "Lagerstroemia speciosa  (L.) Pers.",
+            "Family": "Lythraceae"
+        },
+        {
+            "Sr.no.": "129",
+            "Common name": "Tetu",
+            "Botanical name": "Oroxylum indicum  (L.) Kurz",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "130",
+            "Common name": "Umber",
+            "Botanical name": "Ficus racemosa  L.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "131",
+            "Common name": "Undi",
+            "Botanical name": "Calophyllum inophyllum  L.",
+            "Family": "Clusiaceae"
+        },
+        {
+            "Sr.no.": "132",
+            "Common name": "Vad",
+            "Botanical name": "Ficus benghalensis  L.",
+            "Family": "Moraceae"
+        },
+        {
+            "Sr.no.": "133",
+            "Common name": "Vaivarna",
+            "Botanical name": "Crateva adansonii  subsp. odora  (Buch.-Ham.) Jacobs",
+            "Family": "Capparaceae"
+        },
+        {
+            "Sr.no.": "134",
+            "Common name": "Varas",
+            "Botanical name": "Heterophragma quadriloculare  (Roxb.) K.Schum.",
+            "Family": "Bignoniaceae"
+        },
+        {
+            "Sr.no.": "135",
+            "Common name": "Vavla",
+            "Botanical name": "Holoptelea integrifolia  Planch.",
+            "Family": "Ulmaceae"
+        },
+        {
+            "Sr.no.": "136",
+            "Common name": "Vilayti chinch",
+            "Botanical name": "Pithecellobium dulce  (Roxb.) Benth.",
+            "Family": "Leguminosae"
+        },
+        {
+            "Sr.no.": "137",
+            "Common name": "Yellow Tabebuia",
+            "Botanical name": "Tabebuia aurea  (Silva Manso) Benth. & Hook.f. ex S.Moore",
+            "Family": "Bignoniaceae"
+        }
+    ]
+}
