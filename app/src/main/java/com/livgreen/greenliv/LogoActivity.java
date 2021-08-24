@@ -5,20 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.LinearLayout;
 
-public class About_University extends AppCompatActivity {
-    Button campuses;
+public class LogoActivity extends AppCompatActivity {
+    LinearLayout ll_logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_university);
+        setContentView(R.layout.activity_logo);
 
-        campuses=findViewById(R.id.campuses);
-
-
-        campuses.setOnClickListener(new View.OnClickListener() {
+        ll_logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),HomeActivity.class));

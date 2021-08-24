@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         kalinaCampus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),OptionsActivity.class));
+                startActivity(new Intent(getApplicationContext(),MapAndReport.class));
             }
         });
 

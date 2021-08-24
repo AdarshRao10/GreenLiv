@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".About_Sequestration"
     android:layout_gravity="center"
     android:padding="15dp">
@@ -26,5 +27,12 @@ grade status in April 2012 by the National Assessment and Accreditation Council 
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
         />
+
+    <Button
+        android:id="@+id/campuses"
+        android:layout_marginTop="20dp"
+        android:text="VIEW CAMPUSES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

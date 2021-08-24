@@ -172,6 +172,7 @@ public class RegisterActivity extends AppCompatActivity implements LocationListe
             public void onClick(View view) {
                 Intent Login = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(Login);
+                finish();
             }
         });
 

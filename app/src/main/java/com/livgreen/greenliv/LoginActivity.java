@@ -91,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         if(snapshot.exists())
                                         {
+
                                             //if data exist remove error msg from edit text
                                             txtfname.setError(null);
                                             txtfname.setError(null);
@@ -101,7 +102,13 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-                                                startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                                                SharedPreferences preferences=getSharedPreferences("userID", MODE_PRIVATE);
+                                                SharedPreferences.Editor editor=preferences.edit();
+
+                                                editor.putString("userID",fname);
+                                                editor.commit();
+
+                                                startActivity(new Intent(getApplicationContext(),OptionsActivity.class));
 
 
 

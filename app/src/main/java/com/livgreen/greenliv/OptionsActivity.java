@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class OptionsActivity extends AppCompatActivity {
 
-    Button abtApp,abtUni,mapUni,carbon,qrCodes,qrScanner,greenArea,logout;
+    Button abtApp,abtUni,carbon,qrCodes,qrScanner,greenArea,logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,6 @@ public class OptionsActivity extends AppCompatActivity {
 
         abtApp=findViewById(R.id.abtApp);
         abtUni=findViewById(R.id.abtUni);
-        mapUni=findViewById(R.id.mapUni);
         carbon=findViewById(R.id.carbon);
         qrCodes=findViewById(R.id.qrCodes);
         qrScanner=findViewById(R.id.qrScanner);
@@ -42,13 +41,7 @@ public class OptionsActivity extends AppCompatActivity {
             }
         });
 
-        mapUni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               // Toast.makeText(getApplicationContext(), "Maps for Adars", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(),MapsActivity.class));
-            }
-        });
+
 
         carbon.setOnClickListener(new View.OnClickListener() {
             @Override
