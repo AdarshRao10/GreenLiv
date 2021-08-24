@@ -11,6 +11,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/tv_abtSeq"
+        android:scrollbars="vertical"
         android:lineHeight="25dp"
         android:text="Carbon dioxide is the most commonly produced greenhouse gas. Carbon sequestration is the process of capturing and storing atmospheric
 carbon dioxide. It is one method of reducing the amount of carbon dioxide in the atmosphere with the goal of reducing global climate

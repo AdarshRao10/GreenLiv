@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        cal = findViewById(R.id.cal);
+        //cal = findViewById(R.id.cal);
         treeLat = findViewById(R.id.treeLat);
         treeLong = findViewById(R.id.treeLong);
         treeName = findViewById(R.id.treeName);

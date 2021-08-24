@@ -52,6 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
 
 
@@ -89,7 +90,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         LatLng Mumbai = new LatLng(19.0714562,72.8589833);
-        mMap.addMarker(new MarkerOptions().position(Mumbai).title("marker"));
+        mMap.addMarker(new MarkerOptions().position(Mumbai).title("Kalina Campus"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mumbai,17)); //19.07373218412279, 72.85840585026412
     }
     public String readJSON() {
