@@ -8,42 +8,42 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location of the tree"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Location of the tree"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-       >
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--       >-->
 
-        <EditText
-            android:id="@+id/treeLat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter Latitude"
-            android:inputType="numberDecimal"/>
+<!--        <EditText-->
+<!--            android:id="@+id/treeLat"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Latitude"-->
+<!--            android:inputType="numberDecimal"/>-->
 
-        <EditText
-            android:id="@+id/treeLong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:hint="Enter Longitude"
-            android:inputType="numberDecimal"/>
+<!--        <EditText-->
+<!--            android:id="@+id/treeLong"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:hint="Enter Longitude"-->
+<!--            android:inputType="numberDecimal"/>-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
     <TextView
         android:layout_width="wrap_content"

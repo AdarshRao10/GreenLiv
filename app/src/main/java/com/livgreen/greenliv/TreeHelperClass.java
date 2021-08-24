@@ -2,21 +2,24 @@ package com.livgreen.greenliv;
 
 public class TreeHelperClass {
 
-    String latitude,longitude,name,Id;
-    Double trunk,height,Sequestration;
+    String name,Id;
+    Double trunk,height,Sequestration,wa,wt,wd,wc,wco2;
 
     public TreeHelperClass(){
 
     }
 
-    public TreeHelperClass(String latitude, String longitude, String name, String id, Double trunk, Double height, Double sequestration) {
-        this.latitude = latitude;
-        this.longitude = longitude;
+    public TreeHelperClass(String name, String id, Double trunk, Double height, Double sequestration, Double wa, Double wt, Double wd, Double wc, Double wco2) {
         this.name = name;
         Id = id;
         this.trunk = trunk;
         this.height = height;
         Sequestration = sequestration;
+        this.wa = wa;
+        this.wt = wt;
+        this.wd = wd;
+        this.wc = wc;
+        this.wco2 = wco2;
     }
 
     public Double getSequestration() {
@@ -35,21 +38,7 @@ public class TreeHelperClass {
         Id = id;
     }
 
-    public String getLatitude() {
-        return latitude;
-    }
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
-    }
 
     public String getName() {
         return name;

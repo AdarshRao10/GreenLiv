@@ -100,13 +100,15 @@ public class LoginActivity extends AppCompatActivity {
                                             if(passFromDB.equals(password)){
                                                 Toast.makeText(getApplicationContext(), "login success", Toast.LENGTH_SHORT).show();
 
-
-
                                                 SharedPreferences preferences=getSharedPreferences("userID", MODE_PRIVATE);
                                                 SharedPreferences.Editor editor=preferences.edit();
 
                                                 editor.putString("userID",fname);
                                                 editor.commit();
+
+
+
+
 
                                                 startActivity(new Intent(getApplicationContext(),OptionsActivity.class));
 

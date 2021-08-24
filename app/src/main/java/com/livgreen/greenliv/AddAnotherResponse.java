@@ -33,7 +33,7 @@ public class AddAnotherResponse extends AppCompatActivity {
         btn_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent report = new Intent(getApplicationContext(), About_Application.class);
+                Intent report = new Intent(getApplicationContext(), SequestrationReport.class);
                 startActivity(report);
             }
         });
