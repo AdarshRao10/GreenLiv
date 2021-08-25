@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     Double Trunk, Height, wa, wt, wd, wc, wco2, Sequestration, Lat, Long;
     String Name;
     String Id;
+    String uid;
 
 
     FirebaseDatabase RootNode;
@@ -54,16 +55,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             @Override
             public void onClick(View view) {
 
-                if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                        ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 0);
-                } else {
 
-                    getLocation();
-                    if (validateform()) {
 
-                        calculateCarbonSequestraton();
-                    }
+                if (validateform()) {
+
+                    calculateCarbonSequestraton();
                 }
 
 
@@ -97,22 +93,30 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 String userID = preferences.getString("userID", "");
 
                 Id = reference.push().getKey();
-                SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
-                SharedPreferences.Editor myEdit = sharedPreferences.edit();
-                myEdit.putString("id",Id);
-                myEdit.commit();
+                uid=Id;
+//                SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
+//                SharedPreferences.Editor myEdit = sharedPreferences.edit();
+//                myEdit.putString("id",Id);
+//                myEdit.commit();
 
 
                 TreeHelperClass treeHelper = new TreeHelperClass(Name, Id, Trunk, Height, Sequestration, wa, wt, wd, wc, wco2);
 
                 reference.child(userID).child("treeData").child(Id).setValue(treeHelper);
 
-                Intent submit = new Intent(getApplicationContext(), AddAnotherResponse.class);
+                if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                        ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 0);
+                } else {
 
-                startActivity(submit);
+                    getLocation();
+
+                }
 
 
-                finish();
+
+
+//                finish();
 
 
 
@@ -169,11 +173,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         SharedPreferences preferences = getSharedPreferences("userID", MODE_PRIVATE);
 
         String userID = preferences.getString("userID", "");
-
-        SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
-
-
-        String uid = sh.getString("id", "");
+//
+//        SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
+//
+//
+//        String uid = sh.getString("id", "");
 
 
         Log.e("id",uid);
@@ -187,8 +191,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
 
 
-      //  reference.child(userID).child("treeData").child(Id).setValue((lat));  //17.319401181464258, 78.40302230454013
-     //   reference.child(userID).child("treeData").child(Id).setValue(lng);
+        reference.child(userID).child("treeData").child(uid).child("latitude").setValue(lat);  //17.319401181464258, 78.40302230454013
+        reference.child(userID).child("treeData").child(uid).child("longitude").setValue(lng);
+
+//        Intent submit = new Intent(getApplicationContext(), AddAnotherResponse.class);
+//
+//        startActivity(submit);
+//        finish();
 
 
 
