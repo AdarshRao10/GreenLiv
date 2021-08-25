@@ -19,14 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GreenLiv">
         <activity
-            android:name=".CalculationReport"
-            android:exported="true" />
+            android:name=".UserResults"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".BiodiversityActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MapAndReport"
-            android:exported="true" />
+            android:name=".Treeinfo"
+            android:exported="true"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,18 +42,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity android:name=".scannerView" />
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps"></activity>
         <activity
             android:name=".Qr_codes"
             android:exported="true" />
         <activity
             android:name=".AddAnotherResponse"
-            android:exported="true" />
-        <activity
-            android:name=".LogoActivity"
             android:exported="true" />
         <activity
             android:name=".OptionsActivity"
@@ -59,9 +60,14 @@
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".BiodiversityActivity"
             android:exported="true" />
-        <activity android:name=".scannerView" />
+        <activity
+            android:name=".CalculationReport"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -78,16 +84,15 @@
             android:name=".About_Sequestration"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MapAndReport"
             android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

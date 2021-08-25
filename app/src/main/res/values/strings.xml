@@ -4,11 +4,19 @@
     <string name="female">Female</string>
     <string name="third">Third Gender</string>
     <string name="none">Prefer not to say</string>
+    <string name="less">less than</string>
+    <string name="greater">greater than</string>
+    <string name="equal">equals</string>
     <string-array name="gender">
         <item>@string/male</item>
         <item>@string/female</item>
         <item>@string/third</item>
         <item>@string/none</item>
+    </string-array>
+    <string-array name="filter">
+        <item>@string/less</item>
+        <item>@string/greater</item>
+        <item>@string/equal</item>
     </string-array>
     <string name="title_activity_maps">MapsActivity</string>
 </resources>

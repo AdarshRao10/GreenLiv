@@ -4,6 +4,12 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,6 +32,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
     LatLng sydney;
+    String[] QueryType;
+    //Spinner spinner1,spinner2;
+    Button Apply;
+   // EditText trunkSize,treeHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +48,91 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Apply = findViewById(R.id.Apply);
+     //   treeHeight = findViewById(R.id.treeHeight);
+     //   trunkSize = findViewById(R.id.trunkSize);
+
+        // Spinner element
+     //   spinner1 = findViewById(R.id.spinner1);
+     //   spinner2 = findViewById(R.id.spinner2);
+
+        //get array list from string.xml
+        QueryType = getResources().getStringArray(R.array.filter);
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.item_drop_down, QueryType);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(R.layout.item_drop_down);
+
+        // attaching data adapter to spinner
+      //  spinner1.setAdapter(dataAdapter);
+      //  spinner2.setAdapter(dataAdapter);
+
+        Apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+//                    String treeinfo = spinner1.getSelectedItem().toString();
+//                    String trunkinfo = spinner2.getSelectedItem().toString();
+//                    String trunk = trunkSize.getText().toString();
+//                    String height = treeHeight.getText().toString();
+//                    double Apxheight = Double.parseDouble(height);
+//                    double Apxtrunk = Double.parseDouble(trunk);
+
+
+
+                        try{
+                            JSONObject object = new JSONObject(readJSON());
+                            JSONArray array = object.getJSONArray("tree");
+                            for (int i = 0; i < array.length(); i++) {
+
+                                JSONObject jsonObject = array.getJSONObject(i);
+                                String h1 = jsonObject.getString("Trunk_Size");
+                                if(!h1.isEmpty()) {
+                                    try {
+                                        double result = Double.parseDouble(h1);
+                                        if(result > 10 && result < 300)
+                                        {
+                                            String latitude = jsonObject.getString("Location:Latitude");
+                                            String longitude = jsonObject.getString("Location:Longitude");
+                                            if(!latitude.isEmpty() && !longitude.isEmpty())
+                                            {
+                                                try{
+                                                    double lat = Double.parseDouble(latitude);
+                                                    double lng = Double.parseDouble(longitude);
+                                                    sydney = new LatLng(lat,lng);
+                                                    mMap.addCircle(new CircleOptions()
+                                                            .center(sydney).radius(1).strokeColor(Color.YELLOW).fillColor(Color.parseColor("#88008E22")));
+                                                }
+                                                catch (NumberFormatException e)
+                                                {
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        }
+
+                                    } catch (NumberFormatException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+
+
+
+
+
+            }
+        });
     }
 
     /**
@@ -92,6 +187,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng Mumbai = new LatLng(19.0714562,72.8589833);
         mMap.addMarker(new MarkerOptions().position(Mumbai).title("Kalina Campus"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mumbai,17)); //19.07373218412279, 72.85840585026412
+
     }
     public String readJSON() {
         String json = null;
@@ -111,4 +207,32 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         return json;
     }
+
+//    private boolean validateform() {
+//
+//        String trunk = trunkSize.getText().toString();
+//        String height = treeHeight.getText().toString();
+//        double Apxheight = Double.parseDouble(height);
+//        double Apxtrunk = Double.parseDouble(trunk);
+//
+//
+//
+//        if (Apxtrunk < 10) {
+//            trunkSize.setError("trunk size must be greater than 10cm");
+//            return false;
+//        }
+//        if (Apxheight < 1) {
+//            treeHeight.setError("tree height must be greater than 0 cm");
+//            return false;
+//        }
+//        if(trunk.isEmpty() && height.isEmpty()){
+//            Toast.makeText(getApplicationContext(), "enter at least 1 field", Toast.LENGTH_SHORT).show();
+//            return false;
+//        }
+//
+//
+//
+//
+//        return true;
+//    }
 }
