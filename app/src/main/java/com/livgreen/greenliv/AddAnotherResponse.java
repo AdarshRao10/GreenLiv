@@ -26,6 +26,7 @@ public class AddAnotherResponse extends AppCompatActivity {
 
                 Intent SendAnotherResponse = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(SendAnotherResponse);
+                finish();
 
             }
         });
@@ -33,8 +34,10 @@ public class AddAnotherResponse extends AppCompatActivity {
         btn_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent report = new Intent(getApplicationContext(), SequestrationReport.class);
+                Intent report = new Intent(getApplicationContext(), UserResults.class);
                 startActivity(report);
+
+                finish();
             }
         });
     }

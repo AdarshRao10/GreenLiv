@@ -25,7 +25,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements LocationListener {
-    Button cal, carbon, university, application, btn_Submit_Data;
+    Button cal, carbon, university, application, btn_Submit_Data,btn_Existing_Report;
     EditText treeLat, treeLong, treeName, treeTrunk, treeHeight;
     Double Trunk, Height, wa, wt, wd, wc, wco2, Sequestration, Lat, Long;
     String Name;
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         treeTrunk = findViewById(R.id.treeTrunk);
         treeHeight = findViewById(R.id.treeHeight);
         btn_Submit_Data = findViewById(R.id.btn_Submit_Data);
+        btn_Existing_Report = findViewById(R.id.btn_Existing_Report);
 
 
         btn_Submit_Data.setOnClickListener(new View.OnClickListener() {
@@ -160,6 +161,18 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
 
 });
+
+        btn_Existing_Report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),UserResults.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
 
     @Override
@@ -168,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         double lng = location.getLongitude();
 
 
-        Toast.makeText(getApplicationContext()," "+lat+" "+lng, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext()," "+lat+" "+lng, Toast.LENGTH_SHORT).show();
 
         SharedPreferences preferences = getSharedPreferences("userID", MODE_PRIVATE);
 
@@ -194,10 +207,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         reference.child(userID).child("treeData").child(uid).child("latitude").setValue(lat);  //17.319401181464258, 78.40302230454013
         reference.child(userID).child("treeData").child(uid).child("longitude").setValue(lng);
 
-//        Intent submit = new Intent(getApplicationContext(), AddAnotherResponse.class);
+       Intent submit = new Intent(getApplicationContext(), AddAnotherResponse.class);
 //
-//        startActivity(submit);
-//        finish();
+        startActivity(submit);
+        finish();
 
 
 

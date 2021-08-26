@@ -20,11 +20,16 @@
         <entry key="..\:/GreenLiv/app/src/main/res/layout/item_layout.xml" value="0.1" />
         <entry key="..\:/GreenLiv/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
         <entry key="..\:/GreenLiv/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/activity_biodiversity.xml" value="0.16770833333333332" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/activity_user_results.xml" value="0.1" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/item_layout.xml" value="0.25" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/item_report_layout.xml" value="0.1" />
+        <entry key="..\:/GreenLivProject/app/src/main/res/layout/row_item_sequestration_report.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_application.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_sequestration.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_about_university.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SARITA/AndroidStudioProjects/GreenLiv/app/src/main/res/layout/activity_qr_scanner.xml" value="0.20416666666666666" />
       </map>
     </option>
@@ -34,5 +39,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

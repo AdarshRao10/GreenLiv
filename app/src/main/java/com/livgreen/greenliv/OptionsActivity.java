@@ -83,7 +83,7 @@ public class OptionsActivity extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
 
-                Toast.makeText(getApplicationContext(), "Cleared", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(getApplicationContext(), "Cleared", Toast.LENGTH_SHORT).show();
 
                 startActivity(new Intent(getApplicationContext(),LoginActivity.class));
                 finish();
