@@ -6,7 +6,7 @@ plugins {
 android {
     signingConfigs {
         release {
-        storeFile file('D:\\bundle\\greenLive\\liveGreen.jks')
+        storeFile file('C:\\Users\\SARITA\\Desktop\\greenliv\\greenlivkey.jks')
             storePassword 'rootabc'
             keyAlias 'key0'
             keyPassword 'rootabc'
